@@ -7,14 +7,14 @@ import (
 	"gorm.io/gorm"
 )
 
-var db *gorm.DB
+var DB *gorm.DB
 
 func ConnectDB(){
 
 	var err error
 
 	db_path := os.Getenv("DB_PATH")
-	db, err = gorm.Open(sqlite.Open(db_path), &gorm.Config{})
+	DB, err = gorm.Open(sqlite.Open(db_path), &gorm.Config{})
 
 	if err != nil {
 		log.Fatal("failed to connect database")

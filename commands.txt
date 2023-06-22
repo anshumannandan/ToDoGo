@@ -1,0 +1,5 @@
+run server : 
+    CompileDaemon -command="./TODOGO"
+
+migrate tables :
+    go run migrate/migrate.go
