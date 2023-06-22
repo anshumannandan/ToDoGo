@@ -1,0 +1,15 @@
+COMMANDS : 
+    run server : 
+        CompileDaemon -command="./TODOGO"
+    migrate tables :
+        go run migrate/migrate.go
+
+PACKAGES : 
+    GIN : 
+        https://github.com/gin-gonic/gin
+    COMPILE DAEMON : 
+        https://github.com/githubnemo/CompileDaemon
+    GODOTENV : 
+        https://github.com/joho/godotenv
+    GORM : 
+        https://gorm.io/docs/create.html

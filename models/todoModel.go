@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type ToDo struct {
 	gorm.Model
-	Title 		string
+	Title string
 	Description string
 }
