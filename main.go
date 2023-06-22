@@ -7,6 +7,7 @@ import (
 
 func init(){
 	initializers.LoadENV()
+	initializers.ConnectDB()
 }
 
 func main(){
